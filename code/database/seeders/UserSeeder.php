@@ -33,7 +33,7 @@ class UserSeeder extends Seeder
         ]);
         User::factory()->create([
             'name' => 'Company User',
-            'phone' => '0123456789',
+            'phone' => '0345678912',
             'dob' => '2000-12-31',
             'email' => 'company@lacgo.com',
             'type' => UserType::COMPANY,
@@ -41,7 +41,7 @@ class UserSeeder extends Seeder
         ]);
         User::factory()->create([
             'name' => 'Driver User',
-            'phone' => '0123456789',
+            'phone' => '034501238912',
             'dob' => '2000-12-31',
             'email' => 'driver@lacgo.com',
             'type' => UserType::DRIVER,
@@ -49,7 +49,7 @@ class UserSeeder extends Seeder
         ]);
         User::factory()->create([
             'name' => 'Customer User',
-            'phone' => '0123456789',
+            'phone' => '03471294721',
             'dob' => '2000-12-31',
             'email' => 'customer@lacgo.com',
             'type' => UserType::CUSTOMER,

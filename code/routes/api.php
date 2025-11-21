@@ -6,11 +6,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/login', function (Request $request) {
     $request->validate([
-        'email' => 'required|email',
+        'account' => 'required',
         'password' => 'required',
     ]);
 
-    $user = User::where('email', $request->email)->first();
+    $user = User::where('email', $request->account)->first();
 
     if (! $user || ! Hash::check($request->password, $user->password)) {
         return response()->json(['message' => 'Invalid credentials'], 401);
